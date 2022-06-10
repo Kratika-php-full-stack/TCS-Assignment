@@ -109,7 +109,6 @@ export default {
     goToWebsite(website){
       if(website){
         var pattern = /^((http|https|ftp):\/\/)/;
-        console.log("c",pattern.test(website));
         if(!pattern.test(website)) {
             website = "http://" + website;
             window.open(website);
